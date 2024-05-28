@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Keycode Keyboard</title>
+  </head>
+  <body>
+    <div class="event">
+      <div class="e-style event-key">
+        <p class="event-info">event.key</p>
+        <p class="event-value">-</p>
+      </div>
+      <div class="e-style event-keyCode">
+        <p class="event-info">event.keyCode</p>
+        <p id="code" class="event-value">-</p>
+      </div>
+      <div class="e-style event-code">
+        <p class="event-info">event.code</p>
+        <p class="event-value">-</p>
+      </div>
+      <div class="e-style event-which">
+        <p class="event-info">event.which</p>
+        <p class="event-value">-</p>
+      </div>
+      <div class="e-style event-history">
+        <p class="event-info">last pressed key</p>
+        <p class="event-value">-</p>
+      </div>
+    </div>
+    <div class="special-keys">
+      <div class="key key-shift">
+        <p class="key-info">Shift</p>
+        <p class="key-status">-</p>
+      </div>
+      <div class="key key-ctrl">
+        <p class="key-info">Ctrl</p>
+        <p class="key-status">-</p>
+      </div>
+      <div class="key key-alt">
+        <p class="key-info">Alt</p>
+        <p class="key-status">-</p>
+      </div>
+    </div>
+    <div>
+      <div class="keyboard rows">
+        <div class="row row-1">
+          <div data-key="27" class="row-key large-text-2">Esc</div>
+          <div data-key="112" class="row-key">F1</div>
+          <div data-key="113" class="row-key">F2</div>
+          <div data-key="114" class="row-key">F3</div>
+          <div data-key="115" class="row-key">F4</div>
+          <div data-key="116" class="row-key">F5</div>
+          <div data-key="117" class="row-key">F6</div>
+          <div data-key="118" class="row-key">F7</div>
+          <div data-key="119" class="row-key">F8</div>
+          <div data-key="120" class="row-key">F9</div>
+          <div data-key="121" class="row-key">F10</div>
+          <div data-key="122" class="row-key">F11</div>
+          <div data-key="123" class="row-key">F12</div>
+          <div data-key="45" class="row-key large-text">Insert</div>
+        </div>
+        <div class="row row-2">
+          <div data-key="192" class="row-key">`</div>
+          <div data-key="49" class="row-key">1</div>
+          <div data-key="50" class="row-key">2</div>
+          <div data-key="51" class="row-key">3</div>
+          <div data-key="52" class="row-key">4</div>
+          <div data-key="53" class="row-key">5</div>
+          <div data-key="54" class="row-key">6</div>
+          <div data-key="55" class="row-key">7</div>
+          <div data-key="56" class="row-key">8</div>
+          <div data-key="57" class="row-key">9</div>
+          <div data-key="48" class="row-key">0</div>
+          <div data-key="189" class="row-key">-</div>
+          <div data-key="187" class="row-key">=</div>
+          <div data-key="8" class="row-key large-text-2">Backspace</div>
+        </div>
+        <div class="row row-3">
+          <div data-key="9" class="row-key large-text-2">Tab</div>
+          <div data-key="81" class="row-key">Q</div>
+          <div data-key="87" class="row-key">W</div>
+          <div data-key="69" class="row-key">E</div>
+          <div data-key="82" class="row-key">R</div>
+          <div data-key="84" class="row-key">T</div>
+          <div data-key="89" class="row-key">Y</div>
+          <div data-key="85" class="row-key">U</div>
+          <div data-key="73" class="row-key">I</div>
+          <div data-key="79" class="row-key">O</div>
+          <div data-key="80" class="row-key">P</div>
+          <div data-key="219" class="row-key">[</div>
+          <div data-key="221" class="row-key">]</div>
+          <div data-key="220" class="row-key">\</div>
+        </div>
+        <div class="row row-4">
+          <div data-key="20" class="row-key large-text-3">Caps Lock</div>
+          <div data-key="65" class="row-key">A</div>
+          <div data-key="83" class="row-key">S</div>
+          <div data-key="68" class="row-key">D</div>
+          <div data-key="70" class="row-key">F</div>
+          <div data-key="71" class="row-key">G</div>
+          <div data-key="72" class="row-key">H</div>
+          <div data-key="74" class="row-key">J</div>
+          <div data-key="75" class="row-key">K</div>
+          <div data-key="76" class="row-key">L</div>
+          <div data-key="186" class="row-key">;</div>
+          <div data-key="222" class="row-key">'</div>
+          <div data-key="13" class="row-key large-text-2">Enter</div>
+        </div>
+        <div class="row row-5">
+          <div data-spkey="ShiftLeft" class="row-key large-text-3">Shift</div>
+          <div data-key="90" class="row-key">Z</div>
+          <div data-key="88" class="row-key">X</div>
+          <div data-key="67" class="row-key">C</div>
+          <div data-key="86" class="row-key">V</div>
+          <div data-key="66" class="row-key">B</div>
+          <div data-key="78" class="row-key">N</div>
+          <div data-key="77" class="row-key">M</div>
+          <div data-key="188" class="row-key">,</div>
+          <div data-key="190" class="row-key">.</div>
+          <div data-key="191" class="row-key">/</div>
+          <div data-spkey="ShiftRight" class="row-key large-text-4">Shift</div>
+        </div>
+        <div class="row row-6">
+          <div data-spkey="ControlLeft" class="row-key large-text-2">Ctrl</div>
+          <div data-key="91" class="row-key large-text-2">Window</div>
+          <div data-spkey="AltLeft" class="row-key">Alt</div>
+          <div data-key="32" class="row-key large-text-4">Space</div>
+          <div data-spkey="AltRight" class="row-key">Alt</div>
+          <div data-spkey="ControlRight" class="row-key">Ctrl</div>
+          <div data-key="46" class="row-key large-text">Delete</div>
+          <div data-key="37" class="row-key">&larr;</div>
+          <div data-key="39" class="row-key">&rarr;</div>
+          <div data-key="38" class="row-key">&uarr;</div>
+          <div data-key="40" class="row-key">&darr;</div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

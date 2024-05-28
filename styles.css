@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Code+Pro:wght@300;400;500;600;700&display=swap");
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 67.5%;
+}
+:root {
+  --color-primary: #1f2833;
+  --color-secondary: #515466;
+  --text-primary: #66fcf1;
+  --text-secondary: #45a29e;
+  --text-tertiary: #c5c6c7;
+  --shadow: 10px 15px 27px -10px rgba(0, 0, 0, 0.11);
+  --shadow-2: 10px 7px 20px -10px rgba(0, 0, 0, 0.11);
+}
+::selection {
+  background-color: var(--color-primary);
+  color: var(--text-secondary);
+}
+body {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: var(--color-primary);
+  color: var(--text-primary);
+}
+
+.event {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.e-style {
+  margin: 1rem;
+  padding: 1rem;
+  height: 10rem;
+  width: 20rem;
+  background-color: var(--color-secondary);
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: var(--shadow), inset var(--shadow);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.e-style:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+.e-style:active,
+.e-style:focus {
+  transform: scale(0.9) translateY(0);
+  box-shadow: var(--shadow-2);
+}
+.event-value {
+  font-size: 2.5rem;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  font-family: "Source Code Pro", "Quicksand", sans-serif;
+}
+.special-keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 4rem;
+  width: 12rem;
+  border-radius: 0.7rem;
+  margin: 0 1rem;
+  background-color: var(--color-secondary);
+  box-shadow: var(--shadow), inset var(--shadow);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.key-info {
+  text-transform: uppercase;
+}
+.key-status {
+  color: var(--text-tertiary);
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Source Code Pro", "Quicksand", sans-serif;
+}
+
+.keyborad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.rows {
+  display: flex;
+  margin-top: 5rem;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 1rem;
+}
+.row-key {
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  text-align: center;
+  background-color: var(--color-secondary);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.row-key.active {
+  background-color: var(--text-primary);
+  color: var(--color-primary);
+}
+.large-text {
+  width: 6rem;
+}
+.large-text-2 {
+  width: 9rem;
+}
+.large-text-3 {
+  width: 10rem;
+}
+.large-text-4 {
+  width: 15rem;
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 426px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 350px) {
+  .e-style {
+    width: 10rem;
+    height: 5rem;
+    font-size: 1.4rem;
+  }
+  .event-value {
+    font-size: inherit;
+  }
+  .event-info {
+    font-size: inherit;
+  }
+}
+@media (max-width: 1000px) {
+  .row-key {
+    font-size: 1rem;
+    width: 2.5rem;
+    height: 2rem;
+  }
+  .large-text {
+    width: 4rem;
+  }
+  .large-text-2 {
+    width: 6rem;
+  }
+  .large-text-3 {
+    width: 8rem;
+  }
+  .large-text-4 {
+    width: 10rem;
+  }
+}
+@media (max-width: 770px) {
+  .rows {
+    display: none;
+  }
+}
